@@ -1,77 +1,117 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
     color: #333;
+    background: #1d1d1d;
+    color: #f4f4f4;
 }
 
 header {
-    background-color: #333;
+    background: #333;
     color: #fff;
-    padding: 20px;
+    padding: 1rem 0;
     text-align: center;
 }
 
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 0.5rem 0;
+}
+
 nav {
-    background-color: #444;
+    background: #444;
+    padding: 1rem 0;
+    text-align: center;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
 }
 
 nav ul li {
-    margin: 0 15px;
+    display: inline;
+    margin: 0 1rem;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    padding: 10px 20px;
-    display: block;
+    font-weight: bold;
 }
 
 nav ul li a:hover {
-    background-color: #555;
+    text-decoration: underline;
+}
+
+.contact-info {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 0.2rem 0;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 800px;
+    background: #2d2d2d;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 section {
-    padding: 20px;
-    margin: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 1s forwards;
+    margin-bottom: 2rem;
 }
 
-h2 {
-    color: #333;
+section h2 {
+    margin-bottom: 1rem;
+    color: #f4f4f4;
+    border-bottom: 2px solid #f4f4f4;
+    padding-bottom: 0.5rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+.job {
+    margin-bottom: 1.5rem;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
 }
 
-.job, .project {
-    margin-bottom: 20px;
-}
-
-@keyframes fadeInUp {
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
     to {
         opacity: 1;
-        transform: translateY(0);
     }
+}
+
+header, nav, main, footer {
+    animation: fadeIn 2s ease-in;
 }

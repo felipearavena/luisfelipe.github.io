@@ -3,75 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de Felipe Aravena</title>
-    <link rel="stylesheet" href="styles.css">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
-    <script src="analytics.js"></script>
+    <title>CV - Luis Aravena</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1f1f1f, #3a3a3a);
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 40px 0;
+        }
+        h1, h2, h3 {
+            color: #00d4ff;
+        }
+        .section {
+            margin: 40px 0;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .section:hover {
+            transform: scale(1.02);
+        }
+        .contact-icons a {
+            color: #00d4ff;
+            margin: 0 10px;
+            font-size: 1.5em;
+            transition: color 0.3s;
+        }
+        .contact-icons a:hover {
+            color: #ffffff;
+        }
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+        .skills li {
+            margin: 5px 0;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Felipe Aravena</h1>
-        <p>Ingeniero de Software</p>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#about">Acerca de mí</a></li>
-            <li><a href="#experience">Experiencia</a></li>
-            <li><a href="#projects">Proyectos</a></li>
-            <li><a href="#contact">Contacto</a></li>
-        </ul>
-    </nav>
-    <section id="about">
-        <h2>Acerca de mí</h2>
-        <p>Hola, soy Felipe Aravena, un ingeniero de software con pasión por desarrollar soluciones innovadoras y eficientes. Tengo experiencia en una amplia gama de tecnologías y metodologías de desarrollo, y disfruto colaborando en proyectos desafiantes y significativos.</p>
-    </section>
-    <section id="experience">
-        <h2>Experiencia Profesional</h2>
-        <div class="job">
-            <h3>Ingeniero de Software en Tech Solutions Inc.</h3>
-            <p>Enero 2023 - Presente</p>
+    <div class="container">
+        <header>
+            <h1>Luis Aravena</h1>
+            <p>Ingeniero en Informática | Desarrollador de Software</p>
+            <div class="contact-icons">
+                <a href="tel:+56978288461"><i class="fas fa-phone"></i></a>
+                <a href="mailto:luisfelipearavena.a@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/luisfelipe-aravena" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </header>
+        
+        <section class="section">
+            <h2>Resumen Profesional</h2>
+            <p>Ingeniero en Informática con más de 8 años de experiencia en desarrollo de software, especializado en el diseño, implementación y optimización de aplicaciones. Experiencia en metodologías ágiles (Scrum), desarrollo full stack, integración de sistemas y automatización de procesos. Fuerte capacidad para analizar, desarrollar y mantener aplicaciones críticas, asegurando calidad, escalabilidad y seguridad. Apasionado por la mejora continua y la innovación tecnológica, con un enfoque centrado en la experiencia del usuario y el impacto organizacional.</p>
+        </section>
+        
+        <section class="section skills">
+            <h2>Habilidades Claves</h2>
             <ul>
-                <li>Desarrollé y mantuve aplicaciones web utilizando tecnologías como React, Node.js y MongoDB.</li>
-                <li>Implementé soluciones de backend escalables y optimizadas para el rendimiento.</li>
-                <li>Colaboré con equipos multifuncionales para definir y cumplir con los requisitos del cliente.</li>
-                <li>Utilicé metodologías ágiles (Scrum) para gestionar y entregar proyectos a tiempo.</li>
+                <li>Desarrollo Backend: C#, .NET, Node.js, PHP, Python</li>
+                <li>Desarrollo Frontend: JavaScript, TypeScript, Angular, Vue.js, React</li>
+                <li>Bases de Datos: SQL Server, PostgreSQL, MySQL, MongoDB</li>
+                <li>Metodologías Ágiles: Scrum, Kanban, Jira, Azure DevOps, Trello</li>
+                <li>Integración de Sistemas: APIs RESTful, SOAP, OAuth 2.0, JWT</li>
+                <li>Optimización y Seguridad: CI/CD, DevOps, Docker, Kubernetes</li>
             </ul>
-        </div>
-        <div class="job">
-            <h3>Desarrollador Full Stack en Innovatech Labs</h3>
-            <p>Junio 2020 - Diciembre 2022</p>
-            <ul>
-                <li>Diseñé y desarrollé aplicaciones web y móviles utilizando JavaScript, Python y Django.</li>
-                <li>Implementé APIs RESTful para la integración de servicios externos.</li>
-                <li>Realicé pruebas unitarias y de integración para asegurar la calidad del código.</li>
-                <li>Participé en revisiones de código y mentoría de nuevos desarrolladores.</li>
-            </ul>
-        </div>
-    </section>
-    <section id="projects">
-        <h2>Proyectos Destacados</h2>
-        <div class="project">
-            <h3>Sistema de Gestión de Inventarios</h3>
-            <p><strong>Descripción:</strong> Aplicación web para gestionar inventarios de una empresa.</p>
-            <p><strong>Tecnologías:</strong> React, Node.js, MongoDB</p>
-            <p><strong>Repositorio:</strong> <a href="https://github.com/felipearavena/inventory-management" target="_blank">GitHub</a></p>
-        </div>
-        <div class="project">
-            <h3>Aplicación de Seguimiento de Hábitos</h3>
-            <p><strong>Descripción:</strong> Aplicación móvil para ayudar a los usuarios a seguir y mantener hábitos saludables.</p>
-            <p><strong>Tecnologías:</strong> React Native, Django, PostgreSQL</p>
-            <p><strong>Repositorio:</strong> <a href="https://github.com/felipearavena/habit-tracker" target="_blank">GitHub</a></p>
-        </div>
-    </section>
-    <section id="contact">
-        <h2>Contacto</h2>
-        <p><strong>Correo electrónico:</strong> felipe.aravena@example.com</p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/felipearavena/" target="_blank">linkedin.com/in/felipearavena</a></p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/felipearavena" target="_blank">github.com/felipearavena</a></p>
-    </section>
-    <footer>
-        <p>&copy; 2025 Felipe Aravena. Todos los derechos reservados.</p>
-    </footer>
-    <script src="scripts.js"></script>
+        </section>
+        
+        <section class="section">
+            <h2>Experiencia Profesional</h2>
+            <p><strong>Desarrollador de Software | ACL (Remoto, 2023)</strong></p>
+            <p>Desarrollo de soluciones escalables, optimización de sistemas con .NET Core, C# y Angular.</p>
+            
+            <p><strong>Ingeniero de Software | Power Train Technologies (2019 - 2022)</strong></p>
+            <p>Desarrollo de aplicaciones en .NET Core, migración a microservicios y optimización de procesos.</p>
+            
+            <p><strong>Desarrollador Full Stack | Open Word (2017 - 2019)</strong></p>
+            <p>Monitoreo de seguridad minera con C#, .NET y Vue.js, optimización con machine learning.</p>
+        </section>
+        
+        <section class="section">
+            <h2>Formación y Certificaciones</h2>
+            <p>Ingeniería en Informática | Universidad Tecnológica de Chile Inacap (2014)</p>
+            <p>Scrum Product Owner (CSPO) | CertiProf (2023)</p>
+            <p>Cloud Computing y Servicios AWS/Azure | Cursos Online (2022)</p>
+        </section>
+    </div>
 </body>
 </html>
